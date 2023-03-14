@@ -22,7 +22,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Add Migo Scrollbar  */
+/* Add Scrollbar  */
 html::-webkit-scrollbar {
     width: 15px;
 }
@@ -78,6 +78,7 @@ body {
 }
 
 /* End Global Rules  */
+
 /* Start Component  */
 .special-heading {
     color: #ebeced;
@@ -86,6 +87,17 @@ body {
     font-weight: 800;
     letter-spacing: -3px;
     margin: 0;
+    animation: heading-anim 1s linear infinite alternate;
+}
+
+@keyframes heading-anim {
+    0% {
+        color: #ebeced;
+    }
+
+    100% {
+        color: antiquewhite;
+    }
 }
 
 .special-heading+p {
@@ -106,10 +118,10 @@ body {
 }
 
 /* End Component  */
+
 /* Start Header  */
 .header {
     padding: 20px;
-    /* Add Migo  */
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -131,10 +143,6 @@ body {
     position: relative;
 }
 
-.header .links:hover .icon span:nth-child(2) {
-    width: 100%;
-}
-
 .header .links .icon {
     width: 30px;
     display: flex;
@@ -142,23 +150,28 @@ body {
     justify-content: flex-end;
 }
 
+.header .links:hover {
+    cursor: pointer;
+}
+
 .header .links .icon span {
     background-color: #333;
     margin-bottom: 5px;
     height: 2px;
-}
-
-.header .links .icon span:first-child {
     width: 100%;
-}
-
-.header .links .icon span:nth-child(2) {
-    width: 60%;
     transition: 0.3s;
 }
 
-.header .links .icon span:last-child {
-    width: 100%;
+.header .links:hover .icon span:first-child {
+    margin-bottom: -2px;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.header .links:hover .icon span:last-child {
+    margin-top: -7px;
 }
 
 .header .links ul {
@@ -331,11 +344,7 @@ body {
     z-index: -1;
     /* add migo animation  */
     opacity: 0;
-    animation-name: anime-mig;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate;
+    animation: anime-mig 3s infinite linear alternate;
 }
 
 @keyframes anime-mig {
@@ -376,16 +385,19 @@ body {
 
 .portfolio .portfolio-content .card {
     background-color: white;
+    border-radius: 10px;
     transition: 1s;
 }
 
-/* add migo hover */
+/* add hover */
 .portfolio .portfolio-content .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.09);
     cursor: pointer;
 }
 
 .portfolio .portfolio-content .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     max-width: 100%;
 }
 
