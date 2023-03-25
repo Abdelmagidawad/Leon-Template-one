@@ -1,5 +1,5 @@
 # Leon Template 
-First  Template to  implementation about html and css and Pinterest site which created PSD and turned it into a code 
+First  Template to  implementation about html and css and Pinterest site which created PSD and turned it into a code using html and css.
 
 ## Tempalte img 
 <img title="Leon-template" alt="leon-img" src="![image](https://user-images.githubusercontent.com/96316237/227747090-ab1a0660-d825-4d9e-8aca-d498c36b6ca8.png)">
