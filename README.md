@@ -1,5 +1,5 @@
 # Leon Template 
-First  Template to  implementation about html and css and Pinterest site which created PSD and turned it into a code using html and css.
+Leon created a template on Pinterest in PSD format, which was then converted into code using HTML and CSS.
 
 ## Pinterest PSD
 https://pin.it/4B7tkN2
