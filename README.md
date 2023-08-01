@@ -5,7 +5,7 @@ Leon created a template on Pinterest in PSD format, which was then converted int
 https://pin.it/4B7tkN2
 
 ## Tools
-HTML5 and CSS3
+HTML5 and CSS3 and js
 
 ## Link Demo
 https://abdelmagidawad.github.io/Leon-Template-one/
